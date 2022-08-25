@@ -17,6 +17,7 @@ public class SafeAreaPlugin extends Plugin {
 
         JSObject ret = new JSObject();
         ret.put("value", implementation.echo(value));
+        ret.put("android", implementation.echo(value));
         call.resolve(ret);
     }
 }
